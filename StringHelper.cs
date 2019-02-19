@@ -8,6 +8,8 @@ namespace PadawansTask4
         {
             if (str == null)
                 throw new ArgumentNullException();
+            if (str == "")
+                throw new ArgumentException();
             char[] vowels = new char[] { 'a', 'i', 'e', 'o', 'u' };
             int count = 0;
             for (int i = 0; i < str.Length; i++)
